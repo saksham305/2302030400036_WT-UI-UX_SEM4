@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            background-color: #000;
+        }
+
+        /* Left Side - Map */
+        .map-container {
+            flex: 1;
+            background: url('world-map.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+
+        /* Example Marker */
+        .marker {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        /* Sample marker */
+        .marker-italy {
+            top: 50%;
+            left: 40%;
+            background-image: url('marker-image.jpg');
+        }
+
+        /* Popup for marker */
+        .popup {
+            position: absolute;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        /* Right Side - Content Panel */
+        .content-panel {
+            flex: 0.4;
+            background: #111;
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .history-card {
+            background: #222;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .history-card img {
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+
+        .history-card h3 {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left Map -->
+    <div class="map-container">
+        <div class="marker marker-italy" onclick="togglePopup()"></div>
+        <div class="popup" id="popup" style="top: 55%; left: 42%;">
+            <strong>999-1139</strong><br>
+            Norman Conquest of Southern Italy
+        </div>
+    </div>
+
+    <!-- Right Content Panel -->
+    <div class="content-panel">
+        <h1>The Balkans</h1>
+
+        <div class="history-card">
+            <img src="bulgaria-history.jpg" alt="Bulgarian Empire">
+            <h3>History of Bulgaria: First Bulgarian Empire</h3>
+        </div>
+
+        <div class="history-card">
+            <img src="cyril-methodius.jpg" alt="Saints Cyril and Methodius">
+            <h3>Saints Cyril and Methodius</h3>
+        </div>
+
+        <div class="history-card">
+            <img src="norman-conquest.jpg" alt="Norman Conquest">
+            <h3>Norman Conquest of Southern Italy</h3>
+        </div>
+
+        <!-- Add more history cards as needed -->
+    </div>
+
+    <script>
+        function togglePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = popup.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>

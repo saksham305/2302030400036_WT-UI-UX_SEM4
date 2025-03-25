@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Maps - Crusades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">HISTORY<span>MAPS</span></div>
+        <div class="search">crusade</div>
+    </header>
+
+    <main>
+        <div class="map-container">
+            <img src="map-placeholder.jpg" alt="Map" class="map">
+            <div class="map-marker">
+                <img src="byzantine-empire.jpg" alt="Byzantine Empire">
+                <p><strong>1081 - 1185</strong><br>Byzantine Empire: Komnenian Dynasty</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h2>Crusades</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="reconquista.jpg" alt="Reconquista">
+                    <p>Reconquista</p>
+                </div>
+                <div class="grid-item">
+                    <img src="fatimid.jpg" alt="Fatimid Caliphate">
+                    <p>Fatimid Caliphate</p>
+                </div>
+                <div class="grid-item">
+                    <img src="seljuk.jpg" alt="Seljuk Turks">
+                    <p>Seljuk Turks</p>
+                </div>
+                <div class="grid-item">
+                    <img src="armenian.jpg" alt="Armenian Kingdom of Cilicia">
+                    <p>Armenian Kingdom of Cilicia</p>
+                </div>
+                <div class="grid-item">
+                    <img src="byzantine.jpg" alt="Byzantine Empire">
+                    <p>Byzantine Empire: Komnenian Dynasty</p>
+                </div>
+                <div class="grid-item">
+                    <img src="first-crusade.jpg" alt="First Crusade">
+                    <p>First Crusade</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

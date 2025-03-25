@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('world-map.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            padding: 40px;
+        }
+
+        .contact-info {
+            width: 40%;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .info-item img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .logo {
+            margin-top: 20px;
+            width: 200px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 30%;
+        }
+
+        .btn {
+            background: lightgray;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            background: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-info">
+        <h1>CONTACT INFORMATION</h1>
+        <div class="info-item">
+            <img src="phone-icon.png" alt="Phone">
+            +01 23 456789
+        </div>
+        <div class="info-item">
+            <img src="email-icon.png" alt="Email">
+            example@website.com
+        </div>
+        <div class="social-icons">
+            <img src="social1.png" alt="Social">
+            <img src="social2.png" alt="Social">
+            <img src="social3.png" alt="Social">
+            <img src="social4.png" alt="Social">
+        </div>
+        <img src="logo.png" alt="Timemap Explorers" class="logo">
+    </div>
+
+    <div class="buttons">
+        <button class="btn">HOME</button>
+        <button class="btn">MAPS</button>
+        <button class="btn">ABOUT</button>
+    </div>
+</body>
+</html>
